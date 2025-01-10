@@ -1,38 +1,128 @@
 {
-    // VS Code automatically highlights selected words.
-    "vim.timeout": 200,
-    "vim.useSystemClipboard": true,
-  
-    "editor.tabSize": 2,
-    "editor.wordWrap": "on",
-    "editor.lineNumbers": "on",
-    "editor.codeLens": false,
-    "editor.folding": false,
-    "editor.glyphMargin": false,
-    // "editor.hover.enabled": false,
-    "editor.cursorBlinking": "blink",
-    "editor.renderWhitespace": "none",
-    "editor.suggestSelection": "first",
-    "editor.cursorSmoothCaretAnimation": "on",
-    "prettier.singleQuote": true,
-    "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
-    "editor.renderLineHighlight": "all",
-  
-    // font settings
-    "editor.fontSize": 12,
-    "editor.fontWeight": "500",
+    "extensions.ignoreRecommendations": true,
+    "gitlens.advanced.messages": {
+        "suppressGitDisabledWarning": true,
+        "suppressGitMissingWarning": true,
+        "suppressLineUncommittedWarning": true
+    },
+    "flake8.args": [
+        "--max-line-length=120"
+    ],
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook"
+    },
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "right"
+    },
+    "github.copilot.enable": {
+        "*": false,
+        "plaintext": false,
+        "markdown": true,
+        "scminput": false,
+        "yaml": false
+    },
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "editor.tabCompletion": "on",
+    "explorer.openEditors.visible": 1,
+    "editor.unicodeHighlight.ambiguousCharacters": false,
+    "editor.copyWithSyntaxHighlighting": true,
+    "editor.fontFamily": "MesloLGS NF",
     "editor.fontLigatures": true,
-    "terminal.integrated.fontSize": 12,
-    "terminal.integrated.fontWeight": "600",
-    "terminal.integrated.fontWeightBold": "500",
-    "workbench.fontAliasing": "antialiased",
-    "editor.fontFamily": "Iosevka Custom",
-    "terminal.integrated.fontFamily": "Iosevka Custom",
-    "window.zoomLevel": 0.1,
-    "files.autoSave": "afterDelay",
-    "workbench.statusBar.visible": false,
-  "workbench.colorCustomizations": {
-    "tab.activeBackground": "#000000",
-    "activityBar.background": "#000000",
-    "sideBar.background": "#000000",
-    "tab.activeBorder": "#000000",
+    "editor.fontWeight": "400",
+    "editor.matchBrackets": "always",
+    "editor.inlineSuggest.enabled": true,
+    "application.shellEnvironmentResolutionTimeout": 30,
+    "terminal.integrated.scrollback": 10000,
+    "terminal.integrated.fontSize": 16,
+    "terminal.integrated.fontWeight": "normal",
+    "editor.multiCursorLimit": 20000,
+    "workbench.editor.enablePreview": true,
+    "terminal.integrated.gpuAcceleration": "on",
+    "terminal.integrated.fontFamily": "MesloLGS NF",
+    "editor.hideCursorInOverviewRuler": true,
+    "editor.overviewRulerBorder": false,
+    "editor.scrollbar.verticalScrollbarSize": 0,
+    "editor.scrollbar.horizontalScrollbarSize": 2,
+    "editor.stickyScroll.enabled": false,
+    "workbench.tree.renderIndentGuides": "none",
+    "explorer.decorations.colors": false,
+    "editor.bracketPairColorization.enabled": false,
+    "workbench.layoutControl.type": "menu",
+    "security.workspace.trust.untrustedFiles": "open",
+    "editor.suggest.preview": true,
+    "window.zoomLevel": 2,
+    "editor.fontSize": 14,
+    "editor.lineHeight": 24,
+    "editor.cursorStyle": "line-thin",
+    "editor.cursorWidth": 5,
+    "editor.cursorBlinking": "smooth",
+    "editor.cursorSmoothCaretAnimation": "on",
+    "workbench.statusBar.visible": true,
+    "editor.minimap.enabled": true,
+    "breadcrumbs.enabled": false,
+    "workbench.activityBar.location": "top",
+    "editor.guides.indentation": false,
+    "editor.scrollbar.vertical": "hidden",
+    "editor.scrollbar.horizontal": "hidden",
+    "editor.renderLineHighlight": "none",
+    "editor.glyphMargin": false,
+    "editor.lineNumbers": "on",
+    "editor.showFoldingControls": "always",
+    "editor.padding.bottom": 2,
+    "editor.padding.top": 2,
+    "window.title": " ",
+    "window.density.editorTabHeight": "compact",
+    "workbench.layoutControl.enabled": false,
+    "window.commandCenter": false,
+    "editor.scrollBeyondLastLine": true,
+    "window.customTitleBarVisibility": "always",
+    "window.titleBarStyle": "custom",
+    "workbench.colorTheme": "Default Dark+",
+    "workbench.iconTheme": "catppuccin-frappe",
+    "workbench.tree.indent": 10,
+    "workbench.tree.renderIndentGuides": "none",
+    "explorer.decorations.colors": false,
+    "vscode_vibrancy.opacity": 0,
+    "workbench.settings.applyToAllProfiles": [
+        "workbench.colorCustomizations"
+    ],
+    "settings.cycle": [
+        {
+            "id": "lineNumbers",
+            "values": [
+                { "editor.lineNumbers": "on" },
+                { "editor.lineNumbers": "on" }
+            ]
+        }
+    ],
+    "editor.lineNumbers": "on",
+    "indentRainbow.colors": [
+        "rgba(255, 87, 51, 0.4)",   // Light red
+        "rgba(240, 202, 77, 0.4)",  // Light yellow
+        "rgba(153, 202, 81, 0.4)",  // Light green
+        "rgba(79, 193, 233, 0.4)",  // Light blue
+        "rgba(149, 125, 173, 0.4)"  // Light purple
+    ],
+    "indentRainbow.errorColor": "rgba(255, 0, 0, 0.3)", // Color for incorrect indentation
+    "editor.guides.indentation": true,                 // Ensure guides are visible
+    "indentRainbow.showHighlight": true,
+    "workbench.sideBar.location": "right",
+    "workbench.editor.editorActionsLocation": "titleBar"
+}
+
+// Extenton 
+//auto rename
+//Error len
+//Gitlens
+//indent-rainbow
+//live
+//formar
+//sqlite
+//todo tree
+//WakaTime
+//Winddown
+//go
+//
